@@ -261,3 +261,53 @@ KeyError: 'authorization'
 2022-08-07 14:47:12,097 Watching for file changes with StatReloader
 2022-08-07 14:48:14,932 /home/kaushik/work/skrate/src/skrate_ticketing/skrate_ticketing/settings.py changed, reloading.
 2022-08-07 14:48:15,425 Watching for file changes with StatReloader
+2022-08-07 15:29:12,065 Watching for file changes with StatReloader
+2022-08-07 15:31:58,626 /home/kaushik/work/skrate/src/skrate_ticketing/users/views.py changed, reloading.
+2022-08-07 15:31:59,467 Watching for file changes with StatReloader
+2022-08-07 15:32:33,847 /home/kaushik/work/skrate/src/skrate_ticketing/users/views.py changed, reloading.
+2022-08-07 15:32:34,237 Watching for file changes with StatReloader
+2022-08-07 15:33:06,313 /home/kaushik/work/skrate/src/skrate_ticketing/skrate_ticketing/settings.py changed, reloading.
+2022-08-07 15:33:06,835 Watching for file changes with StatReloader
+2022-08-07 15:33:10,171 /home/kaushik/work/skrate/src/skrate_ticketing/users/views.py changed, reloading.
+2022-08-07 15:33:10,704 Watching for file changes with StatReloader
+2022-08-07 15:33:38,836 Watching for file changes with StatReloader
+2022-08-07 15:34:16,321 Watching for file changes with StatReloader
+2022-08-07 15:34:40,669 Requested users/new/
+2022-08-07 15:34:41,179 Response users/new/ - {token.key}
+2022-08-07 15:34:41,180 Requested users/new/
+2022-08-07 15:34:56,686 /home/kaushik/work/skrate/src/skrate_ticketing/users/views.py changed, reloading.
+2022-08-07 15:34:57,180 Watching for file changes with StatReloader
+2022-08-07 15:36:16,338 /home/kaushik/work/skrate/src/skrate_ticketing/skrate_ticketing/settings.py changed, reloading.
+2022-08-07 15:36:17,280 - INFO - Watching for file changes with StatReloader
+2022-08-07 15:36:23,669 - DEBUG - Requested users/new/
+2022-08-07 15:36:24,102 - DEBUG - Response users/new/ - 0f2cca367f6ef36c8ff5e1431358beb30afe2ed4
+2022-08-07 15:36:24,103 - INFO - Requested users/new/
+2022-08-07 15:37:28,277 - INFO - /home/kaushik/work/skrate/src/skrate_ticketing/users/views.py changed, reloading.
+2022-08-07 15:37:28,804 - INFO - Watching for file changes with StatReloader
+2022-08-07 15:37:32,228 - INFO - /home/kaushik/work/skrate/src/skrate_ticketing/users/views.py changed, reloading.
+2022-08-07 15:37:32,772 - INFO - Watching for file changes with StatReloader
+2022-08-07 15:37:43,369 - INFO - /home/kaushik/work/skrate/src/skrate_ticketing/users/views.py changed, reloading.
+2022-08-07 15:37:43,915 - INFO - Watching for file changes with StatReloader
+2022-08-07 15:38:04,338 - INFO - Requested users/new/
+2022-08-07 15:38:15,586 - ERROR - Internal Server Error: /tickets/all/
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kaushik/work/skrate/src/skrate_ticketing/tickets/decorator.py", line 12, in _view
+    token = request.headers["Authorization"].split()[-1]
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/http/request.py", line 437, in __getitem__
+    return super().__getitem__(key.replace("_", "-"))
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/utils/datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'authorization'
+2022-08-07 15:38:30,215 - WARNING - Method Not Allowed: /tickets/all/
+2022-08-07 15:38:35,468 - INFO - Requested tickets/all/
+2022-08-07 15:38:57,053 - INFO - Requested tickets/?status=&title=&priority
+2022-08-07 15:39:29,056 - WARNING - Not Found: /tickets/maskAsClosed/
+2022-08-07 15:39:36,974 - WARNING - Not Found: /tickets/maskAsClosed/
+2022-08-07 15:39:39,445 - WARNING - Not Found: /tickets/maskAsClosed/
+2022-08-07 15:39:58,126 - INFO - Requested tickets/all/
+2022-08-07 15:40:10,551 - WARNING - Method Not Allowed: /tickets/delete/
+2022-08-07 15:40:15,305 - INFO - Requested tickets/delete/

@@ -27,3 +27,6 @@ BASE URL - https://skarte-test.herokuapp.com/ (don't use as this endpoint is not
 5. POST - https://skarte-test.herokuapp.com/tickets/markAsClosed/
 6. POST - https://skarte-test.herokuapp.com/tickets/delete/
 
+# Link to the Log file 
+Note - view from the bottom for latest logs
+https://github.com/kakdeykaushik/skrate-django-test/blob/master/logger.log
