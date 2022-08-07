@@ -7,11 +7,13 @@ from django.db.models import Q
 from .serializers import TicketSerializer
 from django.core.exceptions import ObjectDoesNotExist
 from .exceptions import (
-    http_401_unauthorized,
     http_404_not_found,
     http_500_internal_server_error,
 )
+from django.conf import settings
 
+
+logger = settings.LOGGER
 User = get_user_model()
 
 
@@ -31,13 +33,15 @@ def create_ticket(request):
         return Response({"ticket_id": new_ticket.id})
 
     except ObjectDoesNotExist as e:
-        print(str(e))
+        logger.warning(e)
         raise http_404_not_found()
 
     except Exception as e:
-        print(str(e))
+        logger.warning(e)
         raise http_500_internal_server_error()
-
+    
+    finally:
+        logger.info("Requested tickets/new/")
 
 @is_authenticated_custom
 @api_view(["GET"])
@@ -70,8 +74,12 @@ def get_tickets(request):
         return Response(serializer.data)
 
     except Exception as e:
-        print(str(e))
+        logger.warning(e)
         raise http_500_internal_server_error()
+
+    finally:
+        logger.info("Requested tickets/?status=&title=&priority")
+
 
 
 @is_authenticated_custom
@@ -83,9 +91,11 @@ def get_tickets_all(request):
         return Response(serializer.data)
 
     except Exception as e:
-        print(str(e))
+        logger.warning(e)
         raise e
 
+    finally:
+        logger.info("Requested tickets/all/")
 
 # Helper for checking priorities
 def is_high_priority(current, other):
@@ -132,13 +142,15 @@ def close_ticket(request):
         return Response(serializer.data)
 
     except ObjectDoesNotExist as e:
-        print(str(e))
+        logger.warning(e)
         raise http_404_not_found()
 
     except Exception as e:
-        print(str(e))
+        logger.warning(e)
         raise e
 
+    finally:
+        logger.info("Requested tickets/maskAsClosed/")
 
 @is_admin
 @api_view(["POST"])
@@ -152,9 +164,12 @@ def delete_ticket(request):
         return Response({"message": f"{ticket_id} - deleted successfuly"})
 
     except ObjectDoesNotExist as e:
-        print(str(e))
+        logger.warning(e)
         raise http_404_not_found()
 
     except Exception as e:
-        print(str(e))
+        logger.warning(e)
         raise e
+
+    finally:
+        logger.info("Requested tickets/delete/")

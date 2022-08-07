@@ -139,3 +139,12 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.User'
+
+ 
+import logging
+logging.basicConfig(filename="logger.log",
+                    format='%(asctime)s %(message)s',
+                    filemode='a')
+ 
+LOGGER = logging.getLogger()
+LOGGER.setLevel(logging.INFO)

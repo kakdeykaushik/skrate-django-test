@@ -4,8 +4,9 @@ from rest_framework.authtoken.models import Token
 from django.core.exceptions import ValidationError
 from rest_framework.response import Response
 from .exceptions import http_409_conflict, http_500_internal_server_error
+from django.conf import settings
 
-
+logger = settings.LOGGER
 User = get_user_model()
 
 
@@ -22,9 +23,12 @@ def create_user(request):
         return Response({"token": token.key})
 
     except ValidationError as e:
-        print(str(e))
+        logger.warning(e)
         raise http_409_conflict(message=e.message)
 
     except Exception as e:
-        print(str(e))
+        logger.warning(e)
         raise http_500_internal_server_error
+
+    finally:
+        logger.info("Requested users/new/")
