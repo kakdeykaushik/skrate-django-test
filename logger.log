@@ -1,0 +1,134 @@
+2022-08-07 12:55:08,070 Watching for file changes with StatReloader
+2022-08-07 13:00:49,116 Requested users/new/
+2022-08-07 13:01:18,592 Requested users/new/
+2022-08-07 13:01:47,408 {'role': ['Value 3 is not a valid choice.']}
+2022-08-07 13:01:47,408 Requested users/new/
+2022-08-07 13:01:47,446 Internal Server Error: /users/new/
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/src/skrate_ticketing/users/views.py", line 20, in create_user
+    new_user.save()
+  File "/home/kaushik/work/skrate/src/skrate_ticketing/users/models.py", line 36, in save
+    self.clean_fields()
+  File "/home/kaushik/work/skrate/src/skrate_ticketing/users/models.py", line 25, in clean_fields
+    super().clean_fields(exclude=exclude)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/db/models/base.py", line 1521, in clean_fields
+    raise ValidationError(errors)
+django.core.exceptions.ValidationError: {'role': ['Value 3 is not a valid choice.']}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/kaushik/work/skrate/src/skrate_ticketing/users/views.py", line 27, in create_user
+    raise http_409_conflict(message=e.message)
+AttributeError: 'ValidationError' object has no attribute 'message'
+2022-08-07 13:02:29,993 /home/kaushik/work/skrate/src/skrate_ticketing/users/views.py changed, reloading.
+2022-08-07 13:02:30,494 Watching for file changes with StatReloader
+2022-08-07 13:02:35,244 {'role': ['Value 3 is not a valid choice.']}
+2022-08-07 13:02:35,244 Requested users/new/
+2022-08-07 13:02:35,245 Internal Server Error: /users/new/
+2022-08-07 13:04:50,431 Requested users/new/
+2022-08-07 13:05:23,304 Requested users/new/
+2022-08-07 13:05:46,552 {'role': ['Value 3 is not a valid choice.']}
+2022-08-07 13:05:46,553 Requested users/new/
+2022-08-07 13:05:46,553 Internal Server Error: /users/new/
+2022-08-07 13:10:14,873 Requested tickets/new/
+2022-08-07 13:10:39,743 Internal Server Error: /tickets/new/
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kaushik/work/skrate/src/skrate_ticketing/tickets/decorator.py", line 34, in _view
+    raise http_401_unauthorized()
+rest_framework.exceptions.APIException: Unauthorized
+2022-08-07 13:11:10,587 /home/kaushik/work/skrate/src/skrate_ticketing/users/views.py changed, reloading.
+2022-08-07 13:11:11,504 Watching for file changes with StatReloader
+2022-08-07 13:11:35,746 Internal Server Error: /tickets/new/
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kaushik/work/skrate/src/skrate_ticketing/tickets/decorator.py", line 34, in _view
+    raise http_401_unauthorized()
+rest_framework.exceptions.APIException: Unauthorized
+2022-08-07 13:12:16,681 /home/kaushik/work/skrate/src/skrate_ticketing/tickets/decorator.py changed, reloading.
+2022-08-07 13:12:17,040 Watching for file changes with StatReloader
+2022-08-07 13:12:21,209 Internal Server Error: /tickets/new/
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/middleware/clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'bool' object has no attribute 'get'
+2022-08-07 13:12:36,771 /home/kaushik/work/skrate/src/skrate_ticketing/tickets/decorator.py changed, reloading.
+2022-08-07 13:12:37,088 Watching for file changes with StatReloader
+2022-08-07 13:12:53,837 Internal Server Error: /tickets/new/
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kaushik/work/skrate/src/skrate_ticketing/tickets/decorator.py", line 35, in _view
+    raise http_401_unauthorized()
+rest_framework.exceptions.APIException: Unauthorized
+2022-08-07 13:13:50,067 /home/kaushik/work/skrate/src/skrate_ticketing/tickets/decorator.py changed, reloading.
+2022-08-07 13:13:50,563 Watching for file changes with StatReloader
+2022-08-07 13:15:45,510 /home/kaushik/work/skrate/src/skrate_ticketing/users/views.py changed, reloading.
+2022-08-07 13:15:45,819 Watching for file changes with StatReloader
+2022-08-07 13:18:41,050 Requested users/new/
+2022-08-07 13:19:02,804 Requested users/new/
+2022-08-07 13:19:22,150 {'role': ['Value 3 is not a valid choice.']}
+2022-08-07 13:19:22,150 Requested users/new/
+2022-08-07 13:19:22,150 Internal Server Error: /users/new/
+2022-08-07 13:19:42,685 ["Username 'emp user' is already in use."]
+2022-08-07 13:19:42,685 Requested users/new/
+2022-08-07 13:19:42,686 Internal Server Error: /users/new/
+2022-08-07 13:23:21,034 Requested tickets/new/
+2022-08-07 13:24:08,566 Requested tickets/all/
+2022-08-07 13:24:32,020 Requested tickets/all/
+2022-08-07 13:24:39,243 Requested tickets/all/
+2022-08-07 13:24:51,696 Internal Server Error: /tickets/all/
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kaushik/work/skrate/src/skrate_ticketing/tickets/decorator.py", line 12, in _view
+    token = request.headers["Authorization"].split()[-1]
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/http/request.py", line 437, in __getitem__
+    return super().__getitem__(key.replace("_", "-"))
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/utils/datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'authorization'
+2022-08-07 13:25:13,272 Requested tickets/all/
+2022-08-07 13:25:53,057 Requested tickets/?status=&title=&priority
+2022-08-07 13:27:53,742 Requested tickets/maskAsClosed/
+2022-08-07 13:28:54,479 Ticket matching query does not exist.
+2022-08-07 13:28:54,480 Requested tickets/delete/
+2022-08-07 13:28:54,480 Internal Server Error: /tickets/delete/
+2022-08-07 13:29:02,739 Ticket matching query does not exist.
+2022-08-07 13:29:02,740 Requested tickets/delete/
+2022-08-07 13:29:02,740 Internal Server Error: /tickets/delete/
+2022-08-07 13:29:19,691 Requested tickets/?status=&title=&priority
+2022-08-07 13:30:06,173 Requested tickets/delete/

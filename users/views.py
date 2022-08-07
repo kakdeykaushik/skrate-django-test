@@ -24,11 +24,11 @@ def create_user(request):
 
     except ValidationError as e:
         logger.warning(e)
-        raise http_409_conflict(message=e.message)
+        raise http_409_conflict(message=e)
 
     except Exception as e:
         logger.warning(e)
-        raise http_500_internal_server_error
+        raise http_500_internal_server_error()
 
     finally:
         logger.info("Requested users/new/")
