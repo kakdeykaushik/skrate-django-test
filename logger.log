@@ -132,3 +132,132 @@ KeyError: 'authorization'
 2022-08-07 13:29:02,740 Internal Server Error: /tickets/delete/
 2022-08-07 13:29:19,691 Requested tickets/?status=&title=&priority
 2022-08-07 13:30:06,173 Requested tickets/delete/
+2022-08-07 14:22:00,726 Watching for file changes with StatReloader
+2022-08-07 14:22:03,740 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2022-08-07 14:22:03,796 Bad Request: /
+2022-08-07 14:22:03,971 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2022-08-07 14:22:04,003 Bad Request: /favicon.ico
+2022-08-07 14:22:09,372 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2022-08-07 14:22:09,413 Bad Request: /docs
+2022-08-07 14:22:09,575 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2022-08-07 14:22:09,622 Bad Request: /favicon.ico
+2022-08-07 14:22:17,157 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2022-08-07 14:22:17,201 Bad Request: /tickets/all
+2022-08-07 14:22:17,361 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2022-08-07 14:22:17,389 Bad Request: /favicon.ico
+2022-08-07 14:22:32,751 /home/kaushik/work/skrate/src/skrate_ticketing/skrate_ticketing/settings.py changed, reloading.
+2022-08-07 14:22:33,057 Watching for file changes with StatReloader
+2022-08-07 14:22:36,327 /home/kaushik/work/skrate/src/skrate_ticketing/skrate_ticketing/settings.py changed, reloading.
+2022-08-07 14:22:36,817 Watching for file changes with StatReloader
+2022-08-07 14:22:37,744 Internal Server Error: /tickets/all/
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kaushik/work/skrate/src/skrate_ticketing/tickets/decorator.py", line 12, in _view
+    token = request.headers["Authorization"].split()[-1]
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/http/request.py", line 437, in __getitem__
+    return super().__getitem__(key.replace("_", "-"))
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/utils/datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'authorization'
+2022-08-07 14:22:37,920 Not Found: /favicon.ico
+2022-08-07 14:22:48,428 /home/kaushik/work/skrate/src/skrate_ticketing/skrate_ticketing/settings.py changed, reloading.
+2022-08-07 14:22:48,970 Watching for file changes with StatReloader
+2022-08-07 14:25:29,823 /home/kaushik/work/skrate/src/skrate_ticketing/tickets/views.py changed, reloading.
+2022-08-07 14:25:30,178 Watching for file changes with StatReloader
+2022-08-07 14:25:30,448 Requested tickets/all/
+2022-08-07 14:25:34,345 Requested tickets/all/
+2022-08-07 14:25:37,533 Requested tickets/all/
+2022-08-07 14:25:42,734 Requested tickets/all/
+2022-08-07 14:25:55,990 Requested tickets/all/
+2022-08-07 14:26:07,743 Method Not Allowed: /users/new/
+2022-08-07 14:26:12,990 Internal Server Error: /tickets/
+Traceback (most recent call last):
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kaushik/work/skrate/src/skrate_ticketing/tickets/decorator.py", line 12, in _view
+    token = request.headers["Authorization"].split()[-1]
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/http/request.py", line 437, in __getitem__
+    return super().__getitem__(key.replace("_", "-"))
+  File "/home/kaushik/work/skrate/venv-skrate/lib/python3.10/site-packages/django/utils/datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'authorization'
+2022-08-07 14:26:24,233 Method Not Allowed: /users/new/
+2022-08-07 14:36:54,845 /home/kaushik/work/skrate/src/skrate_ticketing/skrate_ticketing/settings.py changed, reloading.
+2022-08-07 14:36:55,383 Watching for file changes with StatReloader
+2022-08-07 14:37:06,936 /home/kaushik/work/skrate/src/skrate_ticketing/tickets/views.py changed, reloading.
+2022-08-07 14:37:07,467 Watching for file changes with StatReloader
+2022-08-07 14:41:16,840 /home/kaushik/work/skrate/src/skrate_ticketing/skrate_ticketing/settings.py changed, reloading.
+2022-08-07 14:41:17,402 Watching for file changes with StatReloader
+2022-08-07 14:41:28,194 Method Not Allowed: /users/new/
+2022-08-07 14:41:28,381 Not Found: /favicon.ico
+2022-08-07 14:46:51,711 /home/kaushik/work/skrate/src/skrate_ticketing/skrate_ticketing/urls.py changed, reloading.
+2022-08-07 14:46:52,896 Watching for file changes with StatReloader
+2022-08-07 14:47:11,780 /home/kaushik/work/skrate/src/skrate_ticketing/skrate_ticketing/urls.py changed, reloading.
+2022-08-07 14:47:12,097 Watching for file changes with StatReloader
+2022-08-07 14:48:14,932 /home/kaushik/work/skrate/src/skrate_ticketing/skrate_ticketing/settings.py changed, reloading.
+2022-08-07 14:48:15,425 Watching for file changes with StatReloader
