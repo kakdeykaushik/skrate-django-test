@@ -44,6 +44,8 @@ INSTALLED_APPS = [
 
     # custom apps
     'users',
+    'tickets',
+
 ]
 
 REST_FRAMEWORK = {
