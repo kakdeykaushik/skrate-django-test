@@ -8,7 +8,7 @@ def is_authenticated_custom(view):
 
         @wraps(view)
         def _view(request, *args, **kwargs):
-            print(request.headers)
+
             token = request.headers["Authorization"].split()[-1]
             if Token.objects.get(key=token):
                 return view(request, *args, **kwargs)
